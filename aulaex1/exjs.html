@@ -4,60 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do Dia</title>
-    <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-    html, body {
-        height: 100vh;
-    }
-    body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: wheat;
-    font: normal 1rem Arial;
-    }
-    h1 {
-        font: 700 2rem Arial;
-        color: white;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
-    .box {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-color: white;
-        width: 50%;
-        height: auto;
-        border-radius: 0.8rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        padding: 2rem 5rem;
-    }
-    img {
-        border-radius: 50%;
-        height: 15rem;
-        width: 15rem;
-    }
-    p#horario {
-        margin-bottom: 1rem;
-    }
-    p#footer {
-        font: 300 1rem Arial;
-        margin-top: 1rem;
-        color: white;
-    }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <h1>Hora do dia</h1>
     <div class="box">
         <p id="horario"></p>
         <p id="fotoHora"></p>
-        
     </div>
     <p id="footer">Curso Em Video</p>
     <script>
@@ -67,13 +20,13 @@
         var pFTH = document.querySelector('p#fotoHora')
         pH.innerHTML = `São ${hora}hrs`
         if (hora < 12) {
-            pFTH.innerHTML = '<img src="sunshine.jpg" alt="teste">'
+            pFTH.innerHTML = '<img src="img/sunshine.jpg" alt="teste">'
         }
         else if (hora < 18) {
-            pFTH.innerHTML = '<img src="entardecer.jpg" alt="entardecer">'
+            pFTH.innerHTML = '<img src="img/entardecer.jpg" alt="entardecer">'
         }
         else if (hora < 23) {
-            pFTH.innerHTML = '<img src="noite.png" alt="noite">'
+            pFTH.innerHTML = '<img src="img/noite.png" alt="noite">'
         }
     </script>
 </body>

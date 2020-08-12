@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html, body {
+        height: 100vh;
+    }
+    body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: wheat;
+    font: normal 1rem Arial;
+    }
+    h1 {
+        font: 700 2rem Arial;
+        color: white;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        width: 50%;
+        height: auto;
+        border-radius: 0.8rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 2rem 5rem;
+    }
+    img {
+        border-radius: 50%;
+        height: 15rem;
+        width: 15rem;
+    }
+    p#horario {
+        margin-bottom: 1rem;
+    }
+    p#footer {
+        font: 300 1rem Arial;
+        margin-top: 1rem;
+        color: white;
+    }
