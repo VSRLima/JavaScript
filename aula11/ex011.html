@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiscalização</title>
+</head>
+<body>
+    <h1>Aeroporto</h1>
+    De onde você é? <input type="text" name="Est" id="Est">
+    <input type="button" value="Verificar" onclick="verificação()">
+    <div id="res"></div>
+    <script>
+        function verificação() {
+            var Catlocal = document.querySelector('input#Est')
+            var local = Catlocal.value.toUpperCase()
+            if (local == 'BRASIL') {
+                res.innerHTML = `<p>Você é brasileiro</p>`
+            }
+            else {
+                res.innerHTML = `<p>Você é estrangeiro, veio do ${local}.`
+            }
+            res.innerHTML += 'Bem vindo ao país'
+        }
+    </script>
+</body>
+</html>
