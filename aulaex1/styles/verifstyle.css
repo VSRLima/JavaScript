@@ -30,6 +30,9 @@
     input {
         margin-bottom: 1rem;
     }
+    p {
+        margin-top: 1rem;
+    }
     img {
         border-radius: 50%;
         height: 15rem;

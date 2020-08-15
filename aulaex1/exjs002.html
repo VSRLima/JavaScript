@@ -9,14 +9,24 @@
 <body>
     <h1>Verificador de Idade</h1>
     <div class="box">
-        <form action="" id="create">
-            Ano de Nascimento: <input type="number" name="idade" id="idade"><br>
-            Sexo: <input type="radio" name="MF" id="M" value="M"> Masculino      <input type="radio" name="MF" id="F" value="F"> Feminino
-        </form>
-        <button type="submit" form="create">Verificar </button>
+        Ano de Nascimento: <input type="number" name="idade" id="idade"><br>
+        Sexo: <input type="radio" name="MF" id="M" value="M"> Masculino  <input type="radio" name="MF" id="F" value="F"> Feminino<br>
+        <input type="button" value="Verificar" onclick="verificar()">
+        <p id="res">Preencha os dados acima para ver o resultado!</p>
+    
     </div>
     <script>
-        
+        function verificar() {
+            var data = new Date()
+            var idade = data.getFullYear() - Number(document.querySelector('input#idade').value)
+            var text = document.querySelector('p#res')
+            if (idade == data.getFullYear()) {
+                alert("Por favor insira um ano de nascimento")
+            }
+            else {
+                text.innerHTML = `Você tem ${idade} anos`
+            }
+        }
     </script>
 </body>
 </html>
