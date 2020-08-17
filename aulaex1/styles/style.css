@@ -20,14 +20,12 @@
         margin-top: 1rem;
     }
     .box {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        text-align: center;
         background-color: white;
         width: 50%;
         height: auto;
         border-radius: 0.8rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         padding: 2rem 5rem;
     }
     img {
@@ -38,8 +36,8 @@
     p#horario {
         margin-bottom: 1rem;
     }
-    p#footer {
-        font: 300 1rem Arial;
+    footer {
+        font: 700 1rem Arial;
         margin-top: 1rem;
         color: white;
     }

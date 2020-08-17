@@ -38,3 +38,8 @@
         height: 15rem;
         width: 15rem;
     }
+    footer {
+        font: 700 1rem Arial;
+        margin-top: 1rem;
+        color: white;
+    }
