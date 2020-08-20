@@ -11,12 +11,15 @@
         <h1>Verificador de Idade</h1>
     </header>
     <section class="box">
-        Ano de Nascimento: <input type="number" name="idade" id="idade"><br>
-        Sexo: <input type="radio" name="MF" id="M" value="M"> Masculino  <input type="radio" name="MF" id="F" value="F"> Feminino<br>
+        <p>Ano de Nascimento: <input type="number" name="idade" id="idade"></p><br>
+        <p>
+            Sexo: <input type="radio" name="MF" id="M"><label for="M">Masculino</label>
+            <input type="radio" name="MF" id="F" value="F"><label for="F">Feminino</label> <br>
+        </p>
         <input type="button" value="Verificar" onclick="verificar()">
-        <p id="res">Preencha os dados acima para ver o resultado!</p>
+        <div id="res"><p>Preencha os dados acima para ver o resultado!</p></div>
     </section>
-    <footer><p>Curso Em Video</p></footer> 
+    <footer><p>&copy;Curso Em Video</p></footer> 
     <script src="scripts/verificador.js"></script>
 </body>
 </html>
